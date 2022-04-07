@@ -8,7 +8,15 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   title = 'empowering quotes'
-  
+  quotes:Quote[] = [
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.'),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.'),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.'),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.'),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.'),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.'),
+  ]
+
 
   constructor() { }
 
