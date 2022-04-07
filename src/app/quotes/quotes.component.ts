@@ -22,12 +22,22 @@ export class QuotesComponent implements OnInit {
 
     });
   }
-  addedQuote(quote){
-    let arraysize = this.quotes.length;
-    quote.id = arraysize + 1;
+  addNewQuote(quote: Quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
+  quoteDelete(isRead: any, index: any){
+    if (isRead){
+      let toDelete = confirm('Are you sure you want to delete this Quote?')
+      if(toDelete){
+        this.quotes.splice(index,1);
+      }
+    }
+  }
+
+  
   
 
 
