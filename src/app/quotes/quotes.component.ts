@@ -22,6 +22,13 @@ export class QuotesComponent implements OnInit {
 
     });
   }
+  addedQuote(quote){
+    let arraysize = this.quotes.length;
+    quote.id = arraysize + 1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+  
 
 
   constructor() { }
