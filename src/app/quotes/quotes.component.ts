@@ -18,6 +18,7 @@ export class QuotesComponent implements OnInit {
   ]
   get sortQuotes() {
     return this.quotes.sort((a, b) => {
+      return <any>new Date(b.dateposted) - <any>new Date(a.datePosted);
 
     });
   }
