@@ -9,6 +9,7 @@
 This is angular CLI application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote. 
 
 ## Live Page
+https://kamaudev-maker.github.io/quote/
 
 
 
