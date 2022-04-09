@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
   title = 'empowering quotes'
   quotes:Quote[] = [
-    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2020,0,12),new Date(2020,0,12)),
-    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2019,11,18),new Date(2020,0,12)),
-    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2021,6,30),new Date(2020,0,12)),
-    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2018,7,12),new Date(2020,0,12)),
-    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2017,3,28),new Date(2020,0,12)),
-    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2022,3,12),new Date(2020,0,12)),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2020,0,12),new Date(2020,0,12),0,0),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2019,11,18),new Date(2020,0,12),0,0),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2021,6,30),new Date(2020,0,12),0,0),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2018,7,12),new Date(2020,0,12),0,0),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2017,3,28),new Date(2020,0,12),0,0),
+    new Quote (1,'Jane Doe','Accept what is, let go of what was and have faith in what will be.','John Doe',new Date(2022,3,12),new Date(2020,0,12),0,0),
   ]
   get sortQuotes() {
     return this.quotes.sort((a, b) => {
@@ -37,10 +37,12 @@ export class QuotesComponent implements OnInit {
     }
   }
 
-  
-  
+  displayInfo(index:any){
+    this.quotes[index].showInfo = !this.quotes[index].showInfo
+  }
 
 
+  
   constructor() { }
 
   ngOnInit(): void {
