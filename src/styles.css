@@ -1,1 +1,11 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import"~bootstrap/dist/css/bootstrap.css";
+
+
+body{
+    background-image: url(../src/assets/scenic-view-of-sunset-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
