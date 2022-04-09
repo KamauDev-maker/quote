@@ -12,7 +12,7 @@
        
         <div class="form-group">
           <label for="description">Quote</label>
-          <textarea class="form-control" id="quote" rows="2" required [(ngModel)]="newQuote.name" name="quote" #quote='ngModel'></textarea>
+          <textarea class="form-control" id="quote" rows="4" required [(ngModel)]="newQuote.name" name="quote" #quote='ngModel'></textarea>
           <div [hidden]="quote.invalid && quote.pristine" class="alert alert-danger">
               <p>Quote is required</p>
           </div>  
