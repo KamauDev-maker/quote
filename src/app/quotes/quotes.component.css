@@ -1,5 +1,5 @@
 h1{
-    font-family: 'Special Elite', cursive;
+    font-family: 'open Sans',sans-serif;
     color: white;
     text-align: center;
     font-weight: bolder;
@@ -7,10 +7,10 @@ h1{
     padding-top: 2%;
   }
   h4{
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'open Sans',sans-serif;
   }
   span{
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'open Sans',sans-serif;
   }
   .overlay{
     border-radius: 5px;
@@ -48,7 +48,7 @@ h1{
     font-weight: 700;
   }
   .card-text{
-    font-family: 'Handlee', cursive;
+    font-family: 'open Sans',sans-serif;
     font-weight: 570;
     font-size: 18px;
   }
